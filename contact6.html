@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Neon Contact Form</title>
+  <link rel="stylesheet" href="contact6.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+  <script src="contact6.js" defer></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="animated-bg"></div>
+
+  <div class="contact-wrapper">
+    <form class="neon-form" id="contactForm">
+      <h2>Contact <span>Me</span></h2>
+
+      <div class="input-icon">
+        <i class="fas fa-user"></i>
+        <input type="text" id="name" required placeholder="Your Name" />
+      </div>
+
+      <div class="input-icon">
+        <i class="fas fa-envelope"></i>
+        <input type="email" id="email" required placeholder="Your Email" />
+      </div>
+
+      <div class="input-icon">
+        <i class="fas fa-comment"></i>
+        <textarea id="message" required placeholder="Your Message"></textarea>
+      </div>
+
+      <button type="submit">Send Message</button>
+      <p class="form-response" id="responseText"></p>
+    </form>
+  </div>
+</body>
+</html>
