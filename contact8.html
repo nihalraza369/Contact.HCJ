@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Split Contact Form</title>
+  <link rel="stylesheet" href="contact8.css">
+  <script src="contact8.js" defer></script>
+</head>
+<body>
+  <div class="split-container">
+    <div class="left-panel">
+      <h1>Let's Talk</h1>
+      <p>We would love to hear from you!</p>
+    </div>
+
+    <div class="right-panel">
+      <form id="contactForm" class="contact-form">
+        <h2>Contact Us</h2>
+
+        <div class="form-group">
+          <input type="text" id="name" required />
+          <label for="name">Your Name</label>
+        </div>
+
+        <div class="form-group">
+          <input type="email" id="email" required />
+          <label for="email">Your Email</label>
+        </div>
+
+        <div class="form-group">
+          <textarea id="message" rows="4" required></textarea>
+          <label for="message">Message</label>
+        </div>
+
+        <button type="submit">Send Message</button>
+        <p class="response-text" id="responseText"></p>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

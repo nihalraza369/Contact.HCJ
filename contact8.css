@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f1f4f8;
+  }
+  
+  .split-container {
+    display: flex;
+    width: 90%;
+    max-width: 1000px;
+    height: 550px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    overflow: hidden;
+    border-radius: 16px;
+    animation: fadeSlide 1s ease;
+  }
+  
+  .left-panel {
+    background: url('https://images.unsplash.com/photo-1521737604893-d14cc237f11d') no-repeat center center/cover;
+    flex: 1;
+    color: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .left-panel h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .left-panel p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+  }
+  
+  .right-panel {
+    flex: 1;
+    background: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .contact-form h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .form-group {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 12px 10px;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+  }
+  
+  .form-group label {
+    position: absolute;
+    top: 12px;
+    left: 14px;
+    background: white;
+    padding: 0 5px;
+    color: #999;
+    transition: all 0.2s ease;
+    pointer-events: none;
+  }
+  
+  .form-group input:focus + label,
+  .form-group input:valid + label,
+  .form-group textarea:focus + label,
+  .form-group textarea:valid + label {
+    top: -10px;
+    font-size: 12px;
+    color: #007BFF;
+  }
+  
+  button {
+    padding: 12px;
+    width: 100%;
+    background: #007BFF;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button:hover {
+    background: #0056b3;
+  }
+  
+  .response-text {
+    text-align: center;
+    margin-top: 10px;
+    color: green;
+  }
+  
+  @keyframes fadeSlide {
+    from {
+      opacity: 0;
+      transform: translateY(40px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .split-container {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .left-panel, .right-panel {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
