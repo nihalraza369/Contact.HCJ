@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body, html {
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-45deg, #00c9ff, #92fe9d, #f2709c, #ff9472);
+    background-size: 400% 400%;
+    animation: gradient 20s ease infinite;
+    z-index: -1;
+  }
+  
+  @keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .form-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .form {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 40px 30px;
+    width: 320px;
+    color: white;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+    animation: slideFade 1s ease;
+  }
+  
+  @keyframes slideFade {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  
+  .input-group {
+    position: relative;
+    margin-bottom: 25px;
+  }
+  
+  .input-group input,
+  .input-group textarea {
+    width: 100%;
+    padding: 12px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #fff;
+    color: white;
+    font-size: 16px;
+    outline: none;
+    resize: none;
+  }
+  
+  .input-group label {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    color: #ccc;
+    pointer-events: none;
+    transition: 0.3s ease;
+  }
+  
+  .input-group input:focus + label,
+  .input-group input:not(:placeholder-shown) + label,
+  .input-group textarea:focus + label,
+  .input-group textarea:not(:placeholder-shown) + label {
+    top: -10px;
+    font-size: 12px;
+    color: #00f0ff;
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    background: #00f0ff;
+    border: none;
+    border-radius: 8px;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  button:hover {
+    background: #00c3cc;
+  }
+  
+  #responseText {
+    text-align: center;
+    margin-top: 10px;
+    color: #00ffe5;
+  }
+  
