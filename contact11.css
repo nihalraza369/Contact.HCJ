@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body, html {
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .background {
+    background: url('water-bg.gif') no-repeat center center/cover;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: slideBg 30s linear infinite;
+    opacity: 0.8;
+  }
+  
+  @keyframes slideBg {
+    0% { background-position: 0 0; }
+    100% { background-position: 1000px 0; }
+  }
+  
+  .form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    animation: slideIn 1s ease forwards;
+    opacity: 0;
+  }
+  
+  @keyframes slideIn {
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    from {
+      transform: translateY(40px);
+      opacity: 0;
+    }
+  }
+  
+  .contact-form {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 35px;
+    border-radius: 20px;
+    backdrop-filter: blur(14px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+    width: 320px;
+    color: #fff;
+  }
+  
+  .contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  
+  .input-box {
+    position: relative;
+    margin-bottom: 25px;
+  }
+  
+  .input-box input,
+  .input-box textarea {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #fff;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+    resize: none;
+  }
+  
+  .input-box label {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    color: #ccc;
+    pointer-events: none;
+    transition: 0.3s ease;
+  }
+  
+  .input-box input:focus + label,
+  .input-box input:not(:placeholder-shown) + label,
+  .input-box textarea:focus + label,
+  .input-box textarea:not(:placeholder-shown) + label {
+    top: -12px;
+    left: 0;
+    font-size: 12px;
+    color: #00f5d4;
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    background: #00f5d4;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    color: #000;
+  }
+  
+  button:hover {
+    background: #00c3a0;
+  }
+  
+  .thank-you {
+    text-align: center;
+    margin-top: 15px;
+    color: #00f5d4;
+    font-size: 14px;
+  }
+  
