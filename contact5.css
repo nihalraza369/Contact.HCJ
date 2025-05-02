@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    height: 100vh;
+    background: linear-gradient(to right, #141e30, #243b55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+  }
+  
+  .glass-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    padding: 40px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+    color: #fff;
+    animation: fadeIn 1.2s ease;
+  }
+  
+  .glass-card h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 32px;
+    font-weight: bold;
+  }
+  
+  .input-box {
+    position: relative;
+    margin-bottom: 25px;
+  }
+  
+  .input-box input,
+  .input-box textarea {
+    width: 100%;
+    padding: 12px;
+    background: transparent;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    color: #fff;
+    outline: none;
+  }
+  
+  .input-box label {
+    position: absolute;
+    left: 12px;
+    top: 12px;
+    color: #ccc;
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+  
+  .input-box input:focus ~ label,
+  .input-box input:valid ~ label,
+  .input-box textarea:focus ~ label,
+  .input-box textarea:valid ~ label {
+    top: -10px;
+    left: 10px;
+    font-size: 12px;
+    background: rgba(20, 30, 48, 0.8);
+    padding: 0 5px;
+    color: #00bcd4;
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    background: #00bcd4;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  button:hover {
+    background: #0097a7;
+  }
+  
+  .form-response {
+    text-align: center;
+    margin-top: 20px;
+    color: #00e676;
+    font-weight: bold;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.92);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  

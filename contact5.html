@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="contact5.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script>
+  <script src="contact5.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <div class="glass-card">
+      <h1>Contact Us</h1>
+      <form id="contactForm">
+        <div class="input-box">
+          <input type="text" id="name" required />
+          <label for="name">Full Name</label>
+        </div>
+
+        <div class="input-box">
+          <input type="email" id="email" required />
+          <label for="email">Email Address</label>
+        </div>
+
+        <div class="input-box">
+          <textarea id="message" rows="4" required></textarea>
+          <label for="message">Your Message</label>
+        </div>
+
+        <button type="submit">Send Message</button>
+        <p class="form-response" id="responseText"></p>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
