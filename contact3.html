@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - Neon Style</title>
+  <link rel="stylesheet" href="contact3.css" />
+</head>
+<body>
+  <div class="container">
+    <form class="contact-form" id="contactForm">
+      <h2>Contact Us</h2>
+
+      <div class="input-box">
+        <input type="text" id="name" required />
+        <label for="name">Full Name</label>
+      </div>
+
+      <div class="input-box">
+        <input type="email" id="email" required />
+        <label for="email">Email Address</label>
+      </div>
+
+      <div class="input-box">
+        <textarea id="message" required></textarea>
+        <label for="message">Your Message</label>
+      </div>
+
+      <button type="submit">Send</button>
+      <div class="response" id="response"></div>
+    </form>
+  </div>
+
+  <script src="contact3.js"></script>
+</body>
+</html>
