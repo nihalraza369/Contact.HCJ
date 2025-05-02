@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Get in Touch</title>
+  <link rel="stylesheet" href="contact4.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <div class="contact-img">
+      <img src="https://source.unsplash.com/600x800/?contact,chat" alt="Contact Image">
+    </div>
+
+    <div class="contact-form">
+      <h2>Let’s Talk</h2>
+      <p>We’d love to hear from you. Please fill out this form.</p>
+      
+      <form id="contactForm">
+        <div class="input-field">
+          <input type="text" id="name" required>
+          <label for="name">Your Name</label>
+        </div>
+
+        <div class="input-field">
+          <input type="email" id="email" required>
+          <label for="email">Your Email</label>
+        </div>
+
+        <div class="input-field">
+          <textarea id="message" required></textarea>
+          <label for="message">Message</label>
+        </div>
+
+        <button type="submit">Send Message</button>
+        <div class="form-response" id="formResponse"></div>
+      </form>
+    </div>
+  </div>
+
+  <script src="contact4.js"></script>
+</body>
+</html>
